@@ -4,7 +4,7 @@ import { HashRouter as Router, Route } from 'react-router-dom';
 
 
 //components
-import Header from './components/Header.js';
+import Header from './components/Header.js';    
 import Home from './components/Home';
 import Porfolio from './components/Porfolio';
 import Footer from './components/Footer';

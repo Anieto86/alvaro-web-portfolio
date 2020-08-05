@@ -1,0 +1,15 @@
+.p{
+    color:black;
+   
+}
+
+.home{
+  float: left;
+}
+
+.icons{
+  display:flex;
+  justify-content:space-between;
+  padding: 30px;
+  margin-bottom: 30%;
+}

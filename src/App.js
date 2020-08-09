@@ -20,7 +20,6 @@ import wuber from './components/img/project2.PNG';
 import fitnessTracker from './components/img/fitnessTracker.PNG';
 import quizzApp from './components/img/quiz.PNG';
 import scheduler from './components/img/Scheduler.PNG';
-
 import adelaideMarket from './components/img/Logo_Alvaro_small.png'
 
 

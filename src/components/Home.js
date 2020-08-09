@@ -17,10 +17,12 @@ export default function Home() {
             <div className="row-md-5">
                 <div className="col">
                     <h1>About Me</h1>
-                    <h3>Hi, I am Alvaro, nice to meet you!!!</h3>
+                    <h3>Hi, I am Alvaro, nice to meet you</h3>
+                    <h5>Junior Web Developer</h5>
+
                    
                     <p>
-                        Full Stack Web Developer leveraging a background in Molecular Biology and
+                        I am, Full Stack Web Developer leveraging a background in Molecular Biology and
                         PhD in Neuroscience.Recently earned a certificate in web Development from the University of Adelaide Bootcamp, where I developed my skills in JavaScript, CSS, React.js, and responsive web design. While here, I developed client-focused web pages and applications with other team members. I am a motivated person who always learns and puts my energy
                         into approaching programming challenges from different angles and collaborating with others to
                         create meaningful web applications.

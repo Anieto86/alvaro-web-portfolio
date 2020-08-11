@@ -6,10 +6,6 @@ import './style/contact.css'
 import { db } from "../firebase";
 
 
-//fotAwesomeIcon
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-//  import { faArrowAltCircleDown  } from "@fortawesome/free-solid-svg-icons";
-
 export default function Contact() {
     const [name, setName,] = useState ("");
     const [email, setEmail,] = useState ("");
@@ -28,6 +24,7 @@ export default function Contact() {
         })
         .catch(err =>{
             alert(err.message);
+            console.log(err);
         })
 
         setName('');

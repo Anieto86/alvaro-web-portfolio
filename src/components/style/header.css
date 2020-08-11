@@ -1,6 +1,6 @@
 .head{
   height: auto;
-   width: 25%;
+   width: 20%;
    float: left;
 }
 
@@ -11,6 +11,8 @@
     color:rgb(255, 255, 255);
     border-end-end-radius: 50px;
     border-radius:50px;
+    height: 1000px;
+    margin-bottom: 50px;
     
 }
 
@@ -35,7 +37,7 @@ h4{
    color: white;
    border-radius:50px;
    margin:25px;
-   padding:15px;
+   padding:20px;
    -bobox-shadow: 10px 10px 5px #ccc;
    -moz-box-shadow: 10px 10px 5px #ccc;
    -webkit-box-shadow: 10px 10px 5px #ccc;
@@ -44,6 +46,5 @@ h4{
    justify-content: center;
     
 }
-
 
 

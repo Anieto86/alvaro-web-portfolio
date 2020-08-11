@@ -1,9 +1,10 @@
 
 .porfolio{
-    width:25%;
+    width:20%;
     padding-bottom:5%;
     float: left;
-    margin: 25px;
+    display:flex;
+
 }
 
 .card{
@@ -11,8 +12,8 @@
    -moz-box-shadow: 10px 10px 5px  rgb(22, 22, 22);
    -webkit-box-shadow: 10px 10px 5px  rgb(22, 22, 22);
    -khtml-box-shadow: 10px 10px 5px  rgb(22, 22, 22);
-   width: 19rem;
+   width: 25rem;
   height: 25rem;
    justify-content:space-around;
-   align-items: stretch;
+  
 }

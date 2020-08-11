@@ -7,7 +7,6 @@ import { HashRouter as Router, Route } from 'react-router-dom';
 import Header from './components/Header.js';    
 import Home from './components/Home';
 import Porfolio from './components/Porfolio';
-import Footer from './components/Footer';
 import Contact from './components/Contact';
 
 // image component
@@ -21,6 +20,7 @@ import fitnessTracker from './components/img/fitnessTracker.PNG';
 import quizzApp from './components/img/quiz.PNG';
 import scheduler from './components/img/Scheduler.PNG';
 import adelaideMarket from './components/img/Logo_Alvaro_small.png'
+import passwordGenerator from './components/img/PAsswordGenerator.PNG'
 
 
 import './App.css';
@@ -72,14 +72,14 @@ function App() {
             message="This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery.  Moment.js library to work with date and time"
             photo={scheduler} />
 
-          {/* <Porfolio
+          <Porfolio
             name="Password Generator"
             message="Create an application that generates a random password based on user-selected criteria. This app will run in the browser and feature dynamically updated HTML and CSS powered by your JavaScript code."
-            photo={passwordGenerator} /> */}
+            photo={passwordGenerator} />
 
         </Route>
 
-        <Footer />
+      
       </div>
     </Router>
   );

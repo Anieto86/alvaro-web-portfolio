@@ -7,17 +7,17 @@ import './style/porfolio.css'
 
 export default function Porfolio(props) {
     return (
-        <div className="container">
+       
         <div className="container porfolio">
             <div className="card">
-                <img src={props.photo} class="card-img-top" alt="/" />
+                <img src={props.photo} className="card-img-top" alt="/" />
                 <div className="card-body">
                     <h5 className="card-title">{props.name}</h5>
                  <p className="card-text">{props.message}</p>
                 </div>
             </div>
         </div>
-        </div>
+        
        
     )
     

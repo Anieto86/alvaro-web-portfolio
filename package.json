@@ -1,10 +1,11 @@
 {
-  "name": "r-porfolio",
+  "name": "alvaro-web-porfolio",
   "version": "0.1.0",
-  "engines": {
-    "node": "12.x"
-  },
   "private": true,
+  "engines": {
+    "node": "12.x",
+    "npm": "6.13.4"
+  },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.29",
     "@fortawesome/free-brands-svg-icons": "^5.13.1",

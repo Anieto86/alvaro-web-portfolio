@@ -39,7 +39,7 @@ export default function Header() {
                   <a href={"mailto: alvaro16nieto@gmail.com"}>
                   <FontAwesomeIcon icon={faEnvelope} style={{fontSize:"2em" , color:"White"}}/>
                   </a>
-                  <a href={"https://docs.google.com/document/d/1Eb2UgyeRpoqY-QMwbnyWrXrJmKRF_IMUKEvXY9-j3NQ/edit?usp=sharing"}>
+                  <a href={'https://docs.google.com/document/d/1Eb2UgyeRpoqY-QMwbnyWrXrJmKRF_IMUKEvXY9-j3NQ/edit?usp=sharing'}>
                   <FontAwesomeIcon icon={faFile} style={{fontSize:"2em",  color:"White"}}/>
                   </a> 
                   </div>

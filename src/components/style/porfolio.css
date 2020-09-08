@@ -1,9 +1,9 @@
 
 .porfolio{
-    width:20%;
+    width:30%;
     padding-bottom:5%;
-    float: left;
-    display:flex;
+   
+    
 
 }
 
@@ -12,8 +12,8 @@
    -moz-box-shadow: 10px 10px 5px  rgb(22, 22, 22);
    -webkit-box-shadow: 10px 10px 5px  rgb(22, 22, 22);
    -khtml-box-shadow: 10px 10px 5px  rgb(22, 22, 22);
-   width: 25rem;
-  height: 25rem;
-   justify-content:space-around;
+   
+   height: 25rem;
+   padding:10px;
   
 }

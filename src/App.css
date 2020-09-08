@@ -9,3 +9,8 @@
     height: 100%;
 }
 
+.profolioAPP{
+    display:flex;
+    justify-content:space-evenly;
+    flex-wrap: wrap ;
+}

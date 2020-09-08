@@ -8,8 +8,8 @@ import './style/porfolio.css'
 export default function Porfolio(props) {
     return (
        
-        <div className="container porfolio">
-            <div className="card">
+        <div className=" container porfolio">
+            <div className="container card">
                 <img src={props.photo} className="card-img-top" alt="/" />
                 <div className="card-body">
                     <h5 className="card-title">{props.name}</h5>

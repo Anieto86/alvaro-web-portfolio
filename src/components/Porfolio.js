@@ -17,8 +17,6 @@ export default function Porfolio(props) {
                 </div>
             </div>
         </div>
-        
-       
     )
     
 }

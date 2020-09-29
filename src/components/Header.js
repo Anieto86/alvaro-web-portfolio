@@ -6,7 +6,7 @@ import alvaro from './img/alvaro.jpg'
 
 
 //icons 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faGithub, faLinkedin} from '@fortawesome/free-brands-svg-icons';
 import {faEnvelope,faFile } from '@fortawesome/free-solid-svg-icons';
 
@@ -24,7 +24,7 @@ export default function Header() {
                   <Link type="button" className="list-group-item" to="/">Home</Link>
                   <br />
                   <Link type="button" className="list-group-item" to="/Porfolio">Porfolio</Link>
-                  <br />
+                  <br />npm
                   <Link type="button" className="list-group-item" to="/Contact">Contact</Link>
                   <br />
                   <div className="container icons">

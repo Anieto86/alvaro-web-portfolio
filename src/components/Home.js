@@ -27,7 +27,7 @@ export default function Home() {
                         into approaching programming challenges from different angles and collaborating with others to
                         create meaningful web applications.
                 </p>
-                <div className="container icons ">
+                <div className="container icons">
                 <FontAwesomeIcon icon={faReact} style={{fontSize:"3.5em" , color: "lightblue"}}/>
                 <FontAwesomeIcon icon={faNodeJs} style={{fontSize:"3.5em" , color: "green"}}/>
                 <FontAwesomeIcon icon={faJs} style={{fontSize:"3.5em" , color: "yellow"}}/>

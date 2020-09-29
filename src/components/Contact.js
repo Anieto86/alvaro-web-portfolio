@@ -25,11 +25,14 @@ export default function Contact() {
         .catch(err =>{
             alert(err.message);
             console.log(err);
+            
         })
 
         setName('');
         setEmail('');
         setMessage('');
+
+        
     };
 
     return (

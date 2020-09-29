@@ -24,7 +24,7 @@ export default function Header() {
                   <Link type="button" className="list-group-item" to="/">Home</Link>
                   <br />
                   <Link type="button" className="list-group-item" to="/Porfolio">Porfolio</Link>
-                  <br />npm
+                  <br />
                   <Link type="button" className="list-group-item" to="/Contact">Contact</Link>
                   <br />
                   <div className="container icons">

@@ -44,7 +44,7 @@ function App() {
               name="Adelaide Market"
               message="Adelaide Market is a platform to add new services in local market communities and to  support local economies, the green economies and promote local trade"
               photo={adelaideMarket}
-              links={"https://adelaide-market.herokuapp.com/home"}
+              links={"https://github.com/Anieto86/Adelaide-Market"}
               button="Adelaide Market" />
             <Porfolio
               name="GOT"

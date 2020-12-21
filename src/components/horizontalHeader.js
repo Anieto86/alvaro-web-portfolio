@@ -3,28 +3,24 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 //icons
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import {
-  faEnvelope,
-
-} from "@fortawesome/free-solid-svg-icons";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+// import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 //Image
 import imgBackground from "./img/backgroundPhoto4.png";
 import alvaro from "./img/alvaro.jpg";
-//Styled
 
+//Styled
 const HeadStyle = styled.div`
-  height: auto;
-  width: 18%;
+  max-width: 500rem;
   float: left;
   background-image: url(${imgBackground});
   padding: 30px;
   color: rgb(255, 255, 255);
   border-end-end-radius: 50px;
   border-radius: 50px;
-  height: 1000px;
+  height: 230px;
   margin-bottom: 30px;
 `;
 
@@ -33,54 +29,48 @@ const ImgAlvaro = styled.img`
   height: 170px;
   border-radius: 150px;
   border: 3px solid white;
-  display: block;
-  margin: auto;
+  margin-right:25rem;
 `;
 
 const ButtonLinks = styled.button`
   padding: 20px;
   margin: 35px;
   width: 100px;
+  color: pink;
+  
 `;
 
-const HeaderIconsStyle = styled.div`
-  display: flex;
-  justify-content: space-between;
-  margin-top: 10rem;
-`;
+// const HeaderIconsStyle = styled.div`
+//   display: flex;
+//   justify-content: space-between;
+//   margin-top: 10rem;
+// `;
 
-
-export default function Header() {
+export default function HorizontalHeader() {
   return (
-     
-    <HeadStyle className='col-sm-3 col-md-3'>
-     
-      <ImgAlvaro src={alvaro} className='img-fluid' alt='Responsive image' />
+    <HeadStyle className='col-sm-3 col-md-3'  style={{display:'flex', justifyContent: 'flex-end'}}>
 
-      <h4 style={{ textAlign: "center" }}>Alvaro Nieto</h4>
-      <p style={{ textAlign: "center" }}> Scientific => Web-Developer</p>
+      <ImgAlvaro src={alvaro} className='img-fluid' alt='Responsive image' style={{ justifyContent: 'flex-start'}} />
 
-      <div>
         <Link type='button' to='/'>
           <ButtonLinks>Home</ButtonLinks>
         </Link>
-
-        <Link type='button' to='/about'>
+      
+        <Link type='button' to='/'>
           <ButtonLinks>About</ButtonLinks>
         </Link>
 
-
+  
         <Link type='button' to='/Porfolio'>
           <ButtonLinks>Porfolio</ButtonLinks>
         </Link>
-   
+      
         <Link type='button' to='/Contact'>
           <ButtonLinks>Contact</ButtonLinks>
         </Link>
-   
-      </div>
+ 
 
-      <HeaderIconsStyle className='container'>
+      {/* <HeaderIconsStyle className='container'>
         <a href={"https://github.com/Anieto86"}>
           <FontAwesomeIcon
             icon={faGithub}
@@ -99,7 +89,7 @@ export default function Header() {
             style={{ fontSize: "2em", color: "White" }}
           />
         </a>
-      </HeaderIconsStyle>
+      </HeaderIconsStyle> */}
     </HeadStyle>
   );
 }

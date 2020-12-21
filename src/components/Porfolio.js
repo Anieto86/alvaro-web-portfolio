@@ -1,46 +1,37 @@
-import React from 'react'
+import React from "react";
+import styled from "styled-components";
 
+const PorfolioStyled = styled.div`
+  width:25%;
+  padding-bottom: 5%;
+`;
 
-//style
-import './style/porfolio.css'
+const CardStyled = styled.div`
+  bobox-shadow: 10px 10px 5px rgb(22, 22, 22);
+  -moz-box-shadow: 10px 10px 5px rgb(22, 22, 22);
+  -webkit-box-shadow: 10px 10px 5px rgb(22, 22, 22);
+  -khtml-box-shadow: 10px 10px 5px rgb(22, 22, 22);
 
+  height: 30rem;
+  padding: 10px;
+  background-color: white;
+`;
 
 export default function Porfolio(props) {
-    return (
-       
-        <div className=" container porfolio">
-            <div className="container card">
-                <img src={props.photo} className="card-img-top" alt="/" />
-                <div className="card-body">
-                    <h5 className="card-title">{props.name}</h5>
-                 <p className="card-text">{props.message}</p>
-                <a href={props.links} >
-                 <button type="button" className="btn btn-outline-dark btn-block">{props.button}</button>
-                 </a>
-
-                </div>
-            </div>
+  return (
+    <PorfolioStyled className=' container col-md-4 '>
+      <CardStyled className='container'>
+        <img src={props.photo} className='card-img-top' alt='/' />
+        <div className='card-body'>
+          <h5 className='card-title'>{props.name}</h5>
+          <p className='card-text'>{props.message}</p>
+          <a href={props.links}>
+            <button type='button' className='btn btn-outline-dark btn-block'>
+              {props.button}
+            </button>
+          </a>
         </div>
-    )
-    
+      </CardStyled>
+    </PorfolioStyled>
+  );
 }
-
-
-
-            
-// <div className="card" >
-// <img src={wuber} class="card-img-top" alt="/" />
-// <div className="card-body">
-//     <h5 class="card-title">Wuber APP</h5>
-//     <p className="card-text">Our clients are the Wineries, the wine consumers and wine producers of Adelaide. This platform connects these words. To bring new wine experiences and foment new connections.</p>
-// </div>
-// </div>
-
-// <div className="card" >
-// <img src={fitness} class="card-img-top" alt="/" />
-// <div className="card-body">
-//     <h5 class="card-title">Fitness Tracker APP</h5>
-//     <p className="card-text"> Track daily workouts. I want to be able to log multiple exercises in a workout on a given day. I should also be able to track the name, type, weight, sets, reps, and duration of exercise. .</p>
-// </div>
-
-// </div>

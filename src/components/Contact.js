@@ -12,16 +12,19 @@ const ContactStyle = styled.form`
   display: flex;
   justify-content: center;
   font-family: "Signika", sans-serif;
-  margin-bottom: 15%;
+  margin-bottom: 50%;
   width: 75%;
-  color: #4392f1;
+  text-align: center;
+  color: #f3f6f7;
 `;
 
 const SubmitStyled = styled.button`
-  background-color: rgb(90, 82, 82);
-
+  background-color: #21262e;
+  &:hover {
+    color: #0fffc7;
+    background-color: #4392f1;
+  }
 `;
-
 
 export default function Contact() {
   const [name, setName] = useState("");
@@ -52,8 +55,7 @@ export default function Contact() {
 
   return (
     <ContactStyle className='row contact' onSubmit={handleSubmit}>
-      <div className='col-md-6 col-sm-12 '>
-        <h1>Contact</h1>
+      <div className=' container col-md-6 col-sm-12 ' >
         <div className='form-group'>
           <label>Name</label>
           <input
@@ -83,7 +85,9 @@ export default function Contact() {
         </div>
 
         <div className='form-group'>
-          <SubmitStyled className='btn btn-dark btn-block submit'>Submit</SubmitStyled>
+          <SubmitStyled className='btn btn-dark btn-block submit'>
+            Submit
+          </SubmitStyled>
         </div>
       </div>
     </ContactStyle>

@@ -13,6 +13,7 @@ const HomeTitleStyled = styled.h2`
  text-align: center;
  &:hover {
     color: #0fffc7;  
+    
   }
 
 `;

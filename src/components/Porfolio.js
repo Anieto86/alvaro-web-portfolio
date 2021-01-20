@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 const PorfolioStyled = styled.div`
-  width:25%;
+  width: 25%;
   padding-bottom: 5%;
 `;
 
@@ -11,7 +11,6 @@ const CardStyled = styled.div`
   height: 30rem;
   padding: 10px;
   background-color: #c7c6c6;
-
   display: block;
   position: relative;
   max-width: 262px;
@@ -29,7 +28,7 @@ const CardStyled = styled.div`
     z-index: -1;
     top: -16px;
     right: -16px;
-    background: #00838d;
+    background: #4392f1;
     height: 32px;
     width: 32px;
     border-radius: 32px;
@@ -39,7 +38,7 @@ const CardStyled = styled.div`
   }
 
   &:hover:before {
-    transform: scale(21);
+    transform: scale(30);
   }
 }
 
@@ -53,11 +52,16 @@ const CardStyled = styled.div`
     color: #ffffff;
   }
 }
+`
 
-
+const ButtonLinks = styled.button`
+  color: #4392f1;
+  border-color: #4392f1;
+  &:hover {
+    color: #f3f6f7;
+    background: #21262e;
+  }
 `;
-
-
 
 export default function Porfolio(props) {
   return (
@@ -68,9 +72,14 @@ export default function Porfolio(props) {
           <h5 className='card-title'>{props.name}</h5>
           <p className='card-text'>{props.message}</p>
           <a href={props.links}>
-            <button type='button' className='btn btn-outline-dark btn-block'>
+            <ButtonLinks
+              ButtonLinks
+              ButtonLinksn
+              type='button'
+              className='btn btn-outline-dark btn-block'
+            >
               {props.button}
-            </button>
+            </ButtonLinks>
           </a>
         </div>
       </CardStyled>

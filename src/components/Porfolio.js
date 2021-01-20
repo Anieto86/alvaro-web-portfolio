@@ -7,11 +7,7 @@ const PorfolioStyled = styled.div`
 `;
 
 const CardStyled = styled.div`
-  bobox-shadow: 10px 10px 5px rgb(22, 22, 22);
-  -moz-box-shadow: 10px 10px 5px rgb(22, 22, 22);
-  -webkit-box-shadow: 10px 10px 5px rgb(22, 22, 22);
-  -khtml-box-shadow: 10px 10px 5px rgb(22, 22, 22);
-
+  border-radius: 20px;
   height: 30rem;
   padding: 10px;
   background-color: white;

@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { Link } from "react-router-dom";
+//import { Link } from "react-router-dom";
 
 //icons
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -16,7 +16,7 @@ import { faDatabase } from "@fortawesome/free-solid-svg-icons";
 
 //styles
 const HomeTextStyle = styled.p`
-  color: black;
+  color: white;
   font-size: 150%;
 `;
 const HomeIconStyle = styled.div`
@@ -24,6 +24,7 @@ const HomeIconStyle = styled.div`
   justify-content: space-between;
   padding: 30px;
   margin-bottom: 30%;
+  color: #dedee6;
 `;
 
 const HomeStyled = styled.div`
@@ -35,12 +36,9 @@ export default function About() {
     <HomeStyled className='container col-md-8'>
       <div className='row-md-5'>
         <div className='col'>
-          <h3>Hi, I am Alvaro, nice to meet you</h3>
-          <h5>Junior Web Developer</h5>
-          <br />
           <br />
           <HomeTextStyle className='text-justify font-italic'>
-            I'm a Full-Stack Web-Developer with strong skills in modern web
+            I'm a Full-Stack junior Web-Developer with strong skills in modern web
             development MERN Stack Front To Back. My previous career as a
             scientist brought me close to my true passion: building web
             applications. I enjoy the process of building web-pages because I'm
@@ -74,7 +72,7 @@ export default function About() {
             />
             <FontAwesomeIcon
               icon={faDatabase}
-              style={{ fontSize: "3.5em", color: "black" }}
+              style={{ fontSize: "3.5em", color: "white" }}
             />
           </HomeIconStyle>
         </div>

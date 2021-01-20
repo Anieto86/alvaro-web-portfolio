@@ -14,14 +14,12 @@ const ContactStyle = styled.form`
   font-family: "Signika", sans-serif;
   margin-bottom: 15%;
   width: 75%;
+  color: #4392f1;
 `;
 
 const SubmitStyled = styled.button`
   background-color: rgb(90, 82, 82);
-  -bobox-shadow: 10px 10px 5px #ccc;
-  -moz-box-shadow: 10px 10px 5px #ccc;
-  -webkit-box-shadow: 10px 10px 5px #ccc;
-  -khtml-box-shadow: 10px 10px 5px #ccc;
+
 `;
 
 

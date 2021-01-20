@@ -8,7 +8,7 @@ import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 //Image
-import imgBackground from "./img/backgroundPhoto4.png";
+//import imgBackground from "./img/backgroundPhoto4.png";
 import alvaro from "./img/alvaro.jpg";
 //Styled
 
@@ -16,16 +16,14 @@ const HeadStyle = styled.div`
   height: auto;
   width: 18%;
   float: left;
-  background: white;
-  background: rgb(119,221,177);
-  background: linear-gradient(170deg, rgba(119,221,177,0.4962359943977591) 19%, rgba(33,38,46,0.7175245098039216) 63%);
-  // background-image: url(${imgBackground});
+  //background: #c7c6c6; 
   padding: 30px;
-  color: rgb(255, 255, 255);
+  //color: rgb(255, 255, 255);
   border-end-end-radius: 50px;
   border-radius: 50px;
-  height: 1000px;
+  height: 800px;
   margin-bottom: 30px;
+  
 `;
 
 const ImgAlvaro = styled.img`
@@ -35,15 +33,25 @@ const ImgAlvaro = styled.img`
   border: 3px solid white;
   display: block;
   margin: auto;
+  border-color:#4392f1;
+  &:hover{
+  border-color: #0fffc7;
+  }
 `;
 
 const ButtonLinks = styled.button`
   font-size: 20px;
   padding: 6px;
   margin: 30px;
-  margin-right: 80px;
   width: 100px;
   border-radius: 50px;
+  color: #4392f1;
+  background: none;
+  border: none;
+  &:hover {
+    color: #0fffc7;  
+    background: #4392f1;
+  }
 `;
 
 const HeaderIconsStyle = styled.div`
@@ -60,7 +68,7 @@ export default function Header() {
       {/* <h4 style={{ textAlign: "center" }}>Alvaro Nieto</h4>
       <p style={{ textAlign: "center" }}> Scientific => Web-Developer</p> */}
 
-      <div>
+      <div className='container' style={{ margin: "18px" }}>
         <Link type='button' to='/'>
           <ButtonLinks>Home</ButtonLinks>
         </Link>
@@ -82,19 +90,19 @@ export default function Header() {
         <a href={"https://github.com/Anieto86"}>
           <FontAwesomeIcon
             icon={faGithub}
-            style={{ fontSize: "2em", color: "White" }}
+            style={{ fontSize: "2em", color: "#4392f1" }}
           />
         </a>
         <a href={"https://www.linkedin.com/in/alvaro-fernando-nieto-guil/"}>
           <FontAwesomeIcon
             icon={faLinkedin}
-            style={{ fontSize: "2em", color: "White" }}
+            style={{ fontSize: "2em", color: "#4392f1" }}
           />
         </a>
         <a href={"mailto: alvaro16nieto@gmail.com"}>
           <FontAwesomeIcon
             icon={faEnvelope}
-            style={{ fontSize: "2em", color: "White" }}
+            style={{ fontSize: "2em", color: "#4392f1" }}
           />
         </a>
       </HeaderIconsStyle>

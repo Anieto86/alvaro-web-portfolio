@@ -38,15 +38,8 @@ export default function About() {
         <div className='col'>
           <br />
           <HomeTextStyle className='text-justify font-italic'>
-            I'm a Full-Stack junior Web-Developer with strong skills in modern web
-            development MERN Stack Front To Back. My previous career as a
-            scientist brought me close to my true passion: building web
-            applications. I enjoy the process of building web-pages because I'm
-            a naturally curious person with enthusiasm to understand technical
-            challenges. Being a web-developer allows me to use my passions like
-            finding solutions, learning and creating. I seek a role as a web
-            developer at a company where I can learn, grow, and continue to
-            master the craft.
+          I'm a Full-Stack Web-Developer with strong skills in modern web development MERN ( MongoDB, Express, REACT.js, Node.Js ) Stack Front To Back. My previous career as a scientist brought me close to my true passion: building web applications. I enjoy the process of building web-pages because I'm a naturally curious person with enthusiasm to understand technical challenges. Being a web-developer allows me to use my passions like finding solutions,  learning and creating. I seek a role as a web developer at a company where I can learn, grow, and continue to master the craft.
+
           </HomeTextStyle>
 
           <HomeIconStyle className='container'>

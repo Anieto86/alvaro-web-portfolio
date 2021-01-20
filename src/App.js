@@ -3,7 +3,7 @@ import { HashRouter as Router, Route } from "react-router-dom";
 
 //components
 import Header from "./components/Header.js";
-import HorizontalHeader from "./components/horizontalHeader.js";
+//import HorizontalHeader from "./components/horizontalHeader.js";
 import Home from "./components/home.js";
 import About from "./components/About";
 import Porfolio from "./components/Porfolio";
@@ -44,7 +44,7 @@ function App() {
         </Route>
 
         <Route path='/porfolio'>
-          <HorizontalHeader />
+          <Header />
           <div className='container profolioAPP'>
             <Porfolio
               name='ChemDye'
@@ -98,7 +98,7 @@ function App() {
 
             <Porfolio
               name='Password Generator'
-              message='Create an application that generates a random password based on user-selected criteria. This app will run in the browser and feature dynamically updated HTML and CSS powered by your JavaScript code.'
+              message='Create an application that generates a random password based on user-selected criteria.'
               photo={passwordGenerator}
               links={"https://github.com/Anieto86/3-password-generator"}
               button='Password Generator'

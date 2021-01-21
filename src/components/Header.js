@@ -65,10 +65,10 @@ const HeaderIconsStyle = styled.div`
 `;
 
 export default function Header() {
-  return (
+  return (   
     
      
-    <HeadStyle className='container '>
+    <HeadStyle className='container'>
        <div className="row-lg-12 row-md-12 row-sm-12"> 
       <div className=" col-lg-12 col-md-12 col-sm-12 " >
       <ImgAlvaro src={alvaro} alt='Responsive image' />

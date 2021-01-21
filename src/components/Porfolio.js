@@ -2,14 +2,14 @@ import React from "react";
 import styled from "styled-components";
 
 const PorfolioStyled = styled.div`
-  width: 25%;
-  padding-bottom: 5%;
+  width: auto;
+ 
 `;
 
 const CardStyled = styled.div`
   border-radius: 20px;
   height: 30rem;
-  padding: 10px;
+  padding: 1px;
   background-color: #c7c6c6;
   display: block;
   position: relative;
@@ -52,7 +52,7 @@ const CardStyled = styled.div`
     color: #ffffff;
   }
 }
-`
+`;
 
 const ButtonLinks = styled.button`
   color: #4392f1;
@@ -65,24 +65,29 @@ const ButtonLinks = styled.button`
 
 export default function Porfolio(props) {
   return (
-    <PorfolioStyled className=' container col-md-4 '>
-      <CardStyled className='container'>
-        <img src={props.photo} className='card-img-top' alt='/' />
-        <div className='card-body'>
-          <h5 className='card-title'>{props.name}</h5>
-          <p className='card-text'>{props.message}</p>
-          <a href={props.links}>
-            <ButtonLinks
-              ButtonLinks
-              ButtonLinksn
-              type='button'
-              className='btn btn-outline-dark btn-block'
-            >
-              {props.button}
-            </ButtonLinks>
-          </a>
-        </div>
-      </CardStyled>
+
+    <PorfolioStyled className=' container '>
+      <div className=' row-md-12 row-sm-12'>
+        <div lassName='container col-lg-12 col-md-12 col-sm-12'>
+        <CardStyled >
+          <img src={props.photo} className='card-img-top' alt='/' />
+          <div className='card-body'>
+            <h5 className='card-title'>{props.name}</h5>
+            <p className='card-text'>{props.message}</p>
+            <a href={props.links}>
+              <ButtonLinks
+                ButtonLinks
+                ButtonLinksn
+                type='button'
+                className='btn btn-outline-dark btn-block'
+              >
+                {props.button}
+              </ButtonLinks>
+            </a>
+          </div>
+        </CardStyled>
+      </div>
+      </div>
     </PorfolioStyled>
   );
 }

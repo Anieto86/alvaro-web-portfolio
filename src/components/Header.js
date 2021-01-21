@@ -14,63 +14,66 @@ import alvaro from "./img/alvaro.jpg";
 
 const HeadStyle = styled.div`
   height: auto;
-  width: 18%;
+  width: 22%;
   float: left;
-  //background: #c7c6c6; 
   padding: 30px;
-  //color: rgb(255, 255, 255);
   border-end-end-radius: 50px;
   border-radius: 50px;
   height: 800px;
   margin-bottom: 30px;
-  
 `;
 
 const ImgAlvaro = styled.img`
-  width: 170px;
-  height: 170px;
-  border-radius: 150px;
-  border: 3px solid white;
+  //max-width: auto;
+  height: auto;
+  border-radius: 50%;
+  border: 5px solid;
   display: block;
   margin: auto;
-  border-color:#4392f1;
-  &:hover{
-  border-color: #0fffc7;
+  border-color: #4392f1;
+  &:hover {
+    border-color: #0fffc7;
   }
 `;
 
 const ButtonLinks = styled.button`
   font-size: 20px;
-  padding: 6px;
-  margin: 30px;
-  width: 100px;
+  padding: 8px;
+  margin: 20px;
+  margin-right:2rem;
   border-radius: 50px;
   color: #4392f1;
   background: none;
   border: none;
   &:hover {
-    color: #0fffc7;  
+    color: #0fffc7;
     background: #4392f1;
+    
   }
+  /* display: flex;
+ flex-direction:column; */
 `;
 
 const HeaderIconsStyle = styled.div`
   display: flex;
   justify-content: space-between;
   margin-top: 3rem;
+  color: #4392f1;
+  &:hover {
+    color: #0fffc7;
+  }
 `;
 
 export default function Header() {
   return (
-    <HeadStyle className='col-sm-3 col-md-3'>
-      <ImgAlvaro src={alvaro} className='img-fluid' alt='Responsive image' />
-
-      {/* <h4 style={{ textAlign: "center" }}>Alvaro Nieto</h4>
-      <p style={{ textAlign: "center" }}> Scientific => Web-Developer</p> */}
-
-      <div className='container' style={{ margin: "18px" }}>
+    
+     
+    <HeadStyle className='container '>
+       <div className="row-lg-9 row-md-12 row-sm-12"> 
+      <div className=" container col-lg-4 col-md-2 col-sm-2 " >
+      <ImgAlvaro src={alvaro} alt='Responsive image' />
         <Link type='button' to='/'>
-          <ButtonLinks>Home</ButtonLinks>
+          <ButtonLinks> Home</ButtonLinks>
         </Link>
 
         <Link type='button' to='/about'>
@@ -84,28 +87,34 @@ export default function Header() {
         <Link type='button' to='/Contact'>
           <ButtonLinks>Contact</ButtonLinks>
         </Link>
-      </div>
+      
 
-      <HeaderIconsStyle className='container'>
+      <HeaderIconsStyle >
         <a href={"https://github.com/Anieto86"}>
           <FontAwesomeIcon
             icon={faGithub}
-            style={{ fontSize: "2em", color: "#4392f1" }}
+            style={{ fontSize: "3em", color: "#4392f1", margin: "22px" }}
           />
         </a>
         <a href={"https://www.linkedin.com/in/alvaro-fernando-nieto-guil/"}>
           <FontAwesomeIcon
             icon={faLinkedin}
-            style={{ fontSize: "2em", color: "#4392f1" }}
+            style={{ fontSize: "3em", color: "#4392f1", margin: "22px" }}
           />
         </a>
         <a href={"mailto: alvaro16nieto@gmail.com"}>
           <FontAwesomeIcon
             icon={faEnvelope}
-            style={{ fontSize: "2em", color: "#4392f1" }}
+            style={{ fontSize: "3em", color: "#4392f1", margin: "22px" }}
           />
         </a>
       </HeaderIconsStyle>
+     
+      </div>
+    </div>
     </HeadStyle>
+   
+  
+    
   );
 }

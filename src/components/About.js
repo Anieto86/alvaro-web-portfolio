@@ -18,25 +18,27 @@ import { faDatabase } from "@fortawesome/free-solid-svg-icons";
 const HomeTextStyle = styled.p`
   color: white;
   font-size: 150%;
-  width:auto;
+  width:100%;
 `;
 const HomeIconStyle = styled.div`
   display: flex;
   justify-content: space-between;
-  padding: 20px;
-  margin-bottom: 30%;
   color: #dedee6;
 `;
 
 const HomeStyled = styled.div`
- 
+@media only screen and  (max-width: 320px) {
+
+  }
+}
+
 `;
 
 export default function About() {
   return (
     <HomeStyled className='container'>
-      <div className='row-md-12 row-sm-12'>
-        <div className='col-lg-12'>
+      <div className='row-lg-8'>
+        <div className=' col-md-12 col-sm-6'>
           <br />
           <HomeTextStyle className='text-justify font-italic'>
             I'm a Full-Stack Web-Developer with a strong profile on modern web
@@ -52,30 +54,30 @@ export default function About() {
             learn, grow, and continue to master the craft.
           </HomeTextStyle>
 
-          <HomeIconStyle className='container'>
+          <HomeIconStyle>
             <FontAwesomeIcon
               icon={faReact}
-              style={{ fontSize: "3.5em", color: "lightblue" }}
+              style={{ fontSize: "2em", color: "lightblue" }}
             />
             <FontAwesomeIcon
               icon={faNodeJs}
-              style={{ fontSize: "3.5em", color: "green" }}
+              style={{ fontSize: "2em", color: "green" }}
             />
             <FontAwesomeIcon
               icon={faJs}
-              style={{ fontSize: "3.5em", color: "yellow" }}
+              style={{ fontSize: "2em", color: "yellow" }}
             />
             <FontAwesomeIcon
               icon={faCss3}
-              style={{ fontSize: "3.5em", color: "blue" }}
+              style={{ fontSize: "2em", color: "blue" }}
             />
             <FontAwesomeIcon
               icon={faHtml5}
-              style={{ fontSize: "3.5em", color: "orange" }}
+              style={{ fontSize: "2em", color: "orange" }}
             />
             <FontAwesomeIcon
               icon={faDatabase}
-              style={{ fontSize: "3.5em", color: "white" }}
+              style={{ fontSize: "2em", color: "white" }}
             />
           </HomeIconStyle>
         </div>

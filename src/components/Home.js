@@ -16,14 +16,13 @@ const HomeTitleStyled = styled.h2`
 
 export default function Home() {
   return (
-   
-      <div className='row'>
-        <div className=' col-md-12 col-sm-12'>
-        <HomeTitleStyled className='text-center  '>
+   <div className="container">
+      <div className='row-md-12 row-sm-12 row-lg-12'>
+        <HomeTitleStyled className='text-center col-lg-6 col-sm-12 col-md-6'>
           Hi, I'am Alvaro Junior Web-Developer
         </HomeTitleStyled>
         </div>
       </div>
-    
+
   );
 }

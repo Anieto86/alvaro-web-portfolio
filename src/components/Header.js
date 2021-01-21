@@ -14,7 +14,7 @@ import alvaro from "./img/alvaro.jpg";
 
 const HeadStyle = styled.div`
   height: auto;
-  width: 22%;
+  width: 20%;
   float: left;
   padding: 30px;
   border-end-end-radius: 50px;
@@ -69,8 +69,8 @@ export default function Header() {
     
      
     <HeadStyle className='container '>
-       <div className="row-lg-9 row-md-12 row-sm-12"> 
-      <div className=" container col-lg-4 col-md-2 col-sm-2 " >
+       <div className="row-lg-12 row-md-12 row-sm-12"> 
+      <div className=" col-lg-12 col-md-12 col-sm-12 " >
       <ImgAlvaro src={alvaro} alt='Responsive image' />
         <Link type='button' to='/'>
           <ButtonLinks> Home</ButtonLinks>

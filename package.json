@@ -30,7 +30,7 @@
     "eject": "react-scripts eject",
     "heroku-postbuild": "npm run build"
     },
-  "eslintConfig": {
+  "eslintConfig": { 
     "extends": "react-app"
   },
   "browserslist": {

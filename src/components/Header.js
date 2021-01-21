@@ -82,14 +82,14 @@ export default function Header() {
 
         <Link type='button' to='/Porfolio'>
           <ButtonLinks>Porfolio</ButtonLinks>
-        </Link>
+        </Link>    
 
         <Link type='button' to='/Contact'>
           <ButtonLinks>Contact</ButtonLinks>
         </Link>
       
 
-      <HeaderIconsStyle >
+      <HeaderIconsStyle>
         <a href={"https://github.com/Anieto86"}>
           <FontAwesomeIcon
             icon={faGithub}

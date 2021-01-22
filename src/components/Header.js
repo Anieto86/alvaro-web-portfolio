@@ -64,7 +64,7 @@ const HeaderIconsStyle = styled.div`
   }
 `;
 
-export default function Header() {
+export default function Header() {   
   return (   
     
      

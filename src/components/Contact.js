@@ -12,10 +12,11 @@ const ContactStyle = styled.form`
   display: flex;
   justify-content: center;
   font-family: "Signika", sans-serif;
-  margin-bottom: 50%;
+  margin-top: 5%;
   width: 75%;
   text-align: center;
   color: #f3f6f7;
+  font-family: "Bungee Shade", cursive;
 `;
 
 const SubmitStyled = styled.button`
@@ -54,8 +55,10 @@ export default function Contact() {
   };
 
   return (
+    
     <ContactStyle className='row contact' onSubmit={handleSubmit}>
-      <div className=' container col-md-6 col-sm-12 ' >
+     <h1 style={{marginBottom:"5%"}}>Contact</h1>
+      <div className=' container col-md-6 col-sm-12 '>
         <div className='form-group'>
           <label>Name</label>
           <input

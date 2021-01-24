@@ -68,7 +68,7 @@ export default function Porfolio(props) {
 
     <PorfolioStyled className=' container  '>
       <div className=' row-md-12 row-sm-12'>
-        <div lassName='container col-lg-12 col-md-12 col-sm-12'>
+        <div className='container col-lg-12 col-md-12 col-sm-12'>
         <CardStyled >
           <img src={props.photo} className='card-img-top' alt='/' />
           <div className='card-body'>

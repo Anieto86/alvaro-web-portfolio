@@ -13,14 +13,16 @@ import alvaro from "./img/alvaro.jpg";
 //Styled
 
 const HeadStyle = styled.div`
+  text-align: center;
   height: auto;
-  width: 20%;
+  width: 15%;
   float: left;
   padding: 30px;
   border-end-end-radius: 50px;
   border-radius: 50px;
   height: 800px;
   margin-bottom: 30px;
+  font-family: "Bungee Shade", cursive;
 `;
 
 const ImgAlvaro = styled.img`
@@ -40,7 +42,7 @@ const ButtonLinks = styled.button`
   font-size: 20px;
   padding: 8px;
   margin: 20px;
-  margin-right:2rem;
+  margin-right: 2rem;
   border-radius: 50px;
   color: #4392f1;
   background: none;
@@ -48,15 +50,12 @@ const ButtonLinks = styled.button`
   &:hover {
     color: #0fffc7;
     background: #4392f1;
-    
   }
-  /* display: flex;
- flex-direction:column; */
 `;
 
 const HeaderIconsStyle = styled.div`
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   margin-top: 3rem;
   color: #4392f1;
   &:hover {
@@ -64,57 +63,46 @@ const HeaderIconsStyle = styled.div`
   }
 `;
 
-export default function Header() {   
-  return (   
-    
-     
+export default function Header() {
+  return (
     <HeadStyle className='container'>
-       <div className="row-lg-12 row-md-12 row-sm-12"> 
-      <div className=" col-lg-12 col-md-12 col-sm-12 " >
-      <ImgAlvaro src={alvaro} alt='Responsive image'/ >
-        <Link type='button' to='/'>
-          <ButtonLinks> Home</ButtonLinks>
-        </Link>
+      <ImgAlvaro src={alvaro} alt='Responsive image' />
+      <Link type='button' to='/'>
+        <ButtonLinks> Home</ButtonLinks>
+      </Link>
+      <Link type='button' to='/about'>
+        <ButtonLinks>About</ButtonLinks>
+      </Link>
 
-        <Link type='button' to='/about'>
-          <ButtonLinks>About</ButtonLinks>
-        </Link>
+      <Link type='button' to='/Porfolio'>
+        <ButtonLinks>Porfolio</ButtonLinks>
+      </Link>
 
-        <Link type='button' to='/Porfolio'>
-          <ButtonLinks>Porfolio</ButtonLinks>
-        </Link>    
-
-        <Link type='button' to='/Contact'>
-          <ButtonLinks>Contact</ButtonLinks>
-        </Link>
-      
+      <Link type='button' to='/Contact'>
+        <ButtonLinks>Contact</ButtonLinks>
+      </Link>
 
       <HeaderIconsStyle>
         <a href={"https://github.com/Anieto86"}>
           <FontAwesomeIcon
             icon={faGithub}
-            style={{ fontSize: "3em", color: "#4392f1", margin: "22px" }}
+            style={{ fontSize: "2em", color: "#4392f1", margin: "22px" }}
           />
         </a>
         <a href={"https://www.linkedin.com/in/alvaro-fernando-nieto-guil/"}>
           <FontAwesomeIcon
             icon={faLinkedin}
-            style={{ fontSize: "3em", color: "#4392f1", margin: "22px" }}
+            style={{ fontSize: "2em", color: "#4392f1", margin: "22px" }}
           />
         </a>
         <a href={"mailto: alvaro16nieto@gmail.com"}>
           <FontAwesomeIcon
             icon={faEnvelope}
-            style={{ fontSize: "3em", color: "#4392f1", margin: "22px" }}
+            style={{ fontSize: "2em", color: "#4392f1", margin: "22px" }}
           />
         </a>
       </HeaderIconsStyle>
      
-      </div>
-    </div>
     </HeadStyle>
-   
-  
-    
   );
 }

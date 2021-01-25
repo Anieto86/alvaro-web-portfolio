@@ -2,8 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 const PorfolioStyled = styled.div`
-   width: auto;
-   float:right;
+
  
 `;
 
@@ -13,11 +12,11 @@ const CardStyled = styled.div`
   background-color: #c7c6c6;
   display: block;
   position: relative;
-  width: 300px;
+  width: 250px;
   background-color: #f2f8f9;
   border-radius: 4px;
   padding: 10px 10px;
-  margin: 12px;
+  margin: 10px;
   text-decoration: none;
   z-index: 0;
   overflow: hidden;
@@ -66,9 +65,7 @@ const ButtonLinks = styled.button`
 export default function Porfolio(props) {
   return (
 
-    <PorfolioStyled className=' container  '>
-      <div className=' row-md-12 row-sm-12'>
-        <div className='container col-lg-12 col-md-12 col-sm-12'>
+    <PorfolioStyled>
         <CardStyled >
           <img src={props.photo} className='card-img-top' alt='/' />
           <div className='card-body'>
@@ -86,8 +83,6 @@ export default function Porfolio(props) {
             </a>
           </div>
         </CardStyled>
-      </div>
-      </div>
     </PorfolioStyled>
   );
 }

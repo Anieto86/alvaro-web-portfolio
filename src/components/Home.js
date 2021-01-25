@@ -3,7 +3,8 @@ import React from "react";
 import styled from "styled-components";
 
 const HomeTitleStyled = styled.h2`
-  margin-top: 2rem;
+  margin-top: 3rem;
+  padding:1rem;
   font-size: 3rem;
   color: #f3f6f7;
   font-family: "Bungee Shade", cursive;
@@ -18,16 +19,10 @@ const HomeTitleStyled = styled.h2`
 
 export default function Home() {
   return (
-    <HomeTitleStyled className='container '>
-      <div className=' row-md-12 row-sm-12'>
-        <div className='container col-lg-12 col-md-12 col-sm-12'>
+    <HomeTitleStyled>
       Hi, I'am Alvaro <br />
-      Junior Web-Developer
-      <br />
-      <br />
-      <h3>Jr web developer</h3>
-      </div>
-      </div>
+
+      <h2>Jr web developer</h2>
     </HomeTitleStyled>
   );
 }

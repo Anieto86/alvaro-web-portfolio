@@ -15,8 +15,8 @@ import alvaro from "./img/alvaro.jpg";
 const HeadStyle = styled.div`
   text-align: center;
   height: auto;
-  width: 15%;
-  float: left;
+  // width: 15%;
+  // float: left;
   padding: 30px;
   border-end-end-radius: 50px;
   border-radius: 50px;
@@ -26,12 +26,9 @@ const HeadStyle = styled.div`
 `;
 
 const ImgAlvaro = styled.img`
-  //max-width: auto;
-  height: auto;
+ height:180px;
   border-radius: 50%;
   border: 5px solid;
-  display: block;
-  margin: auto;
   border-color: #4392f1;
   &:hover {
     border-color: #0fffc7;
@@ -41,8 +38,8 @@ const ImgAlvaro = styled.img`
 const ButtonLinks = styled.button`
   font-size: 20px;
   padding: 8px;
-  margin: 20px;
-  margin-right: 2rem;
+  margin: 15px;
+  margin-left: 1rem;
   border-radius: 50px;
   color: #4392f1;
   background: none;
@@ -65,23 +62,23 @@ const HeaderIconsStyle = styled.div`
 
 export default function Header() {
   return (
-    <HeadStyle className='container'>
-      <ImgAlvaro src={alvaro} alt='Responsive image' />
-      <Link type='button' to='/'>
-        <ButtonLinks> Home</ButtonLinks>
-      </Link>
-      <Link type='button' to='/about'>
-        <ButtonLinks>About</ButtonLinks>
-      </Link>
+    <HeadStyle>
+      <ImgAlvaro src={alvaro} alt='Resposive image ' />
+      <div className='container' style={{display: 'flex',  flexDirection: "column",  alignItems: 'center'}}>
+        <Link type='button' to='/'>
+          <ButtonLinks>Home</ButtonLinks>
+        </Link>
+        <Link type='button' to='/about'>
+          <ButtonLinks>About</ButtonLinks>
+        </Link>
+        <Link type='button' to='/Porfolio'>
+          <ButtonLinks>Portfolio</ButtonLinks>
+        </Link>
 
-      <Link type='button' to='/Porfolio'>
-        <ButtonLinks>Porfolio</ButtonLinks>
-      </Link>
-
-      <Link type='button' to='/Contact'>
-        <ButtonLinks>Contact</ButtonLinks>
-      </Link>
-
+        <Link type='button' to='/Contact'>
+          <ButtonLinks>Contact</ButtonLinks>
+        </Link>
+      </div>
       <HeaderIconsStyle>
         <a href={"https://github.com/Anieto86"}>
           <FontAwesomeIcon
@@ -102,7 +99,6 @@ export default function Header() {
           />
         </a>
       </HeaderIconsStyle>
-     
     </HeadStyle>
   );
 }

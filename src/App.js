@@ -8,6 +8,7 @@ import Home from "./components/Home";
 import About from "./components/About";
 import Porfolio from "./components/Porfolio";
 import Contact from "./components/Contact";
+//import Porfoliofilter from "./components/Porfoliofilter";
 
 //images
 import got from "./components/img/project1.PNG";
@@ -66,24 +67,27 @@ function App() {
 
         <Route path='/porfolio'>
           <div className='container'>
-            <div className='row'>
+          {/* <Porfoliofilter /> */}
+             <div className='row'>
               <div className='col-lg-2 col-md-10 col-sm-10'>
+         
                 <Header />
               </div>
               <div className='profolioAPP col-10'>
+            
                 <Porfolio
                   name='ChemDye'
                   message='ChemDye born with the idea to help researchers to achieve their goals using the powerful tool of visual communication'
                   photo={chemDye}
                   links={"https://chem-dye-portfolio.herokuapp.com/"}
-                  button='ChemDye'
+                  button='Chem-Dye'
                 />
                 <Porfolio
                   name='Adelaide Market'
                   message='Adelaide Market is a platform to add new services in local market communities and to  support local economies, the green economies and promote local trade'
                   photo={adelaideMarket}
                   links={"https://github.com/Anieto86/Adelaide-Market"}
-                  button='Adelaide Market'
+                  button='ADL Market'
                 />
                 <Porfolio
                   name='GOT'
@@ -106,7 +110,7 @@ function App() {
                   message=' Track daily workouts. I want to be able to log multiple exercises in a workout on a given day. I should also be able to track the name, type, weight, sets, reps, and duration of exercise.'
                   photo={fitnessTracker}
                   links={"https://github.com/Anieto86/Workout-Tracker"}
-                  button='Fitness Traker'
+                  button='Fit Traker'
                 />
                 <Porfolio
                   name='Quizapp'
@@ -120,14 +124,14 @@ function App() {
                   message='This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery.  Moment.js library to work with date and time'
                   photo={scheduler}
                   links={"https://github.com/Anieto86/5-work-days-scheduler"}
-                  button='Work Day Scheduler'
+                  button='WD Scheduler'
                 />
                 <Porfolio
                   name='Password Generator'
                   message='Create an application that generates a random password based on user-selected criteria.'
                   photo={passwordGenerator}
                   links={"https://github.com/Anieto86/3-password-generator"}
-                  button='Password Generator'
+                  button='PASSWD Generator'
                 />
               </div>
             </div>

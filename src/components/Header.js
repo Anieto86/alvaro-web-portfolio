@@ -57,6 +57,8 @@ const HeaderIconsStyle = styled.div`
   color: #4392f1;
   &:hover {
     color: #0fffc7;
+    -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
   }
 `;
 

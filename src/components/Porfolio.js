@@ -1,10 +1,8 @@
 import React from "react";
+
 import styled from "styled-components";
 
-const PorfolioStyled = styled.div`
-
- 
-`;
+const PorfolioStyled = styled.div``;
 
 const CardStyled = styled.div`
   border-radius: 20px;
@@ -55,34 +53,40 @@ const CardStyled = styled.div`
 
 const ButtonLinks = styled.button`
   color: #4392f1;
-  border-color: #4392f1;
+ border-color: #4392f1;
+  font-family: "Bungee Shade", cursive;
+  font-size:20px;
+  display: flex;
+  justify-content: center;
+  
   &:hover {
-    color: #f3f6f7;
-    background: #21262e;
+   color: #0fffc7;
+   border-color: #0fffc7;
+  
   }
 `;
 
 export default function Porfolio(props) {
   return (
-
     <PorfolioStyled>
-        <CardStyled >
-          <img src={props.photo} className='card-img-top' alt='/' />
-          <div className='card-body'>
-            <h5 className='card-title'>{props.name}</h5>
-            <p className='card-text'>{props.message}</p>
-            <a href={props.links}>
-              <ButtonLinks
-                ButtonLinks
-                ButtonLinksn
-                type='button'
-                className='btn btn-outline-dark btn-block'
-              >
-                {props.button}
-              </ButtonLinks>
-            </a>
-          </div>
-        </CardStyled>
+      <CardStyled>
+        <img src={props.photo} className='card-img-top' alt='/' />
+        <div className='card-body'>
+          <h5 className='card-title'>{props.name}</h5>
+          <p className='card-text'>{props.message}</p>
+          <a href={props.links}>
+            <ButtonLinks
+              
+              ButtonLinks
+              ButtonLinksn
+              type='button'
+              className='btn btn-outline btn-block'
+            >
+              LINK
+            </ButtonLinks>
+          </a>
+        </div>
+      </CardStyled>
     </PorfolioStyled>
   );
 }

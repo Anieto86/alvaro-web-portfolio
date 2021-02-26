@@ -11,10 +11,10 @@ const HomeTitleStyled = styled.h2`
   text-align: center;
   border-radius: 50px;
   &:hover {
-    color: #0fffc7;
-    font-size: 3.2rem;
-    background-color: #4392f1;
+    box-shadow: 1px 3px  3px 3px #4392f1;
+       
   }
+  
 `;
 
 export default function Home() {

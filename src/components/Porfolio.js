@@ -1,8 +1,14 @@
-import React from "react";
-
+import React , {useState} from "react";
 import styled from "styled-components";
+import { InputGroup, FormControl } from "react-bootstrap";
 
-const PorfolioStyled = styled.div``;
+import projects from "../data.js";
+
+const PorfolioStyled = styled.div`
+display:flex;
+flex-wrap:wrap ;
+justify-content:center;
+`;
 
 const CardStyled = styled.div`
   border-radius: 20px;
@@ -51,34 +57,63 @@ const CardStyled = styled.div`
 }
 `;
 
+const ImgStyles = styled.img`
+ object-fit: cover;
+ width:230px;
+  height: 125px;
+`;
+
 const ButtonLinks = styled.button`
   color: #4392f1;
- border-color: #4392f1;
+  border-color: #4392f1;
   font-family: "Bungee Shade", cursive;
-  font-size:20px;
+  font-size: 20px;
   display: flex;
   justify-content: center;
-  
+
   &:hover {
-   color: #0fffc7;
-   border-color: #0fffc7;
-  
+    color: #0fffc7;
+    border-color: #0fffc7;
   }
 `;
 
-export default function Porfolio(props) {
+export default function Porfolio() {
+  
+  const [search, setSearch] = useState("");
+
+  const handleSearch = (e) => {
+    setSearch(e.target.value);
+    console.log(e.target.value);
+  };
+
+  const searchProjects = projects.filter((project) => {
+    return project.name.toLowerCase().includes(search.toLowerCase());
+  });
+
   return (
-    <PorfolioStyled>
-      <CardStyled>
-        <img src={props.photo} className='card-img-top' alt='/' />
+<div>
+      
+
+      <InputGroup.Prepend className='container'>
+        <FormControl
+          placeholder='Find my app'
+          onChange={handleSearch}
+          value={search}
+        />
+      </InputGroup.Prepend>
+    <PorfolioStyled className='container'>
+      
+
+      {console.log(projects, "projects")}
+      {searchProjects.map((project, i) => (
+      <CardStyled key={project.id}>
+        <ImgStyles src={project.imges} className='card-img-top' alt='/' />
         <div className='card-body'>
-          <h5 className='card-title'>{props.name}</h5>
-          <p className='card-text'>{props.message}</p>
-          <a href={props.links}>
+          <h5 className='card-name'>{project.name}</h5>
+          <p className='card-description'>{project.description}</p>
+          <a href={project.link}>
             <ButtonLinks
-              
               ButtonLinks
-              ButtonLinksn
               type='button'
               className='btn btn-outline btn-block'
             >
@@ -87,6 +122,10 @@ export default function Porfolio(props) {
           </a>
         </div>
       </CardStyled>
-    </PorfolioStyled>
+       ))}
+      </PorfolioStyled>
+
+      </div>
+      
   );
 }

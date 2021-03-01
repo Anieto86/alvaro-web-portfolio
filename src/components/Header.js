@@ -7,26 +7,26 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
+
 //Image
 //import imgBackground from "./img/backgroundPhoto4.png";
-import alvaro from "./img/alvaro.jpg";
+import alvaro from "../alvaro.jpg";
 //Styled
 
 const HeadStyle = styled.div`
   text-align: center;
   height: auto;
-  // width: 15%;
-  // float: left;
   padding: 30px;
   border-end-end-radius: 50px;
   border-radius: 50px;
   height: 800px;
   margin-bottom: 30px;
   font-family: "Bungee Shade", cursive;
+  display: flex;
+  flex-direction: column;
 `;
 
 const ImgAlvaro = styled.img`
- height:180px;
   border-radius: 50%;
   border: 5px solid;
   border-color: #4392f1;
@@ -64,7 +64,7 @@ const HeaderIconsStyle = styled.div`
 
 export default function Header() {
   return (
-    <HeadStyle>
+    <HeadStyle className="container">
       <ImgAlvaro src={alvaro} alt='Resposive image ' />
       <div className='container' style={{display: 'flex',  flexDirection: "column",  alignItems: 'center'}}>
         <Link type='button' to='/'>

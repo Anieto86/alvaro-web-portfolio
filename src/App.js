@@ -1,6 +1,6 @@
 import React from "react";
 import { HashRouter as Router, Route } from "react-router-dom";
-
+import "./App.css";
 //components
 import Header from "./components/Header";
 //import HorizontalHeader from "./components/horizontalHeader.js";
@@ -8,8 +8,10 @@ import Home from "./components/Home";
 import About from "./components/About";
 import Porfolio from "./components/Porfolio";
 import Contact from "./components/Contact";
+import GitHub from "./components/GitHub";
 
-import "./App.css";
+
+
 
 function App() {
   return (
@@ -23,6 +25,7 @@ function App() {
               </div>
               <div className='col-10 col-md-10 col-sm-10'>
                 <Home />
+                <GitHub/>
               </div>
             </div>
           </div>
